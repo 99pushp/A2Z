@@ -61,6 +61,9 @@ int count_digits_2(int n){
 
 //convert the interger to string
 int count_digits(int n){
+    if(n<0){
+        n=n*(-1);
+    }
     int ans = 0;
     string str = to_string(n);
     ans = str.length();
